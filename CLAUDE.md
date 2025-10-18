@@ -205,7 +205,7 @@ The extension uses strict CSP settings defined in manifest.json:
 
 **Anthropic Claude**
 - API Key Format: `sk-ant-...`
-- Supported Models: Claude Opus 4, Sonnet 4, Sonnet 3.7, Sonnet 3.5v2, Haiku 3.5
+- Supported Models: Claude Sonnet 4.5, Haiku 4.5, Opus 4.1, Opus 4, Sonnet 4, Sonnet 3.7, Sonnet 3.5v2, Haiku 3.5
 - Get API Key: https://console.anthropic.com/
 
 **OpenAI GPT**
