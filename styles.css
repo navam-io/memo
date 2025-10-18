@@ -1,0 +1,107 @@
+/* Tag Styles */
+.tag-item {
+    @apply flex items-center justify-between p-2 rounded-lg transition-colors duration-200;
+}
+
+.tag-icon {
+    @apply w-5 h-5 flex items-center justify-center;
+}
+
+.tag-content {
+    @apply flex-grow;
+}
+
+.tag-name {
+    @apply font-medium;
+}
+
+.tag-description {
+    @apply text-sm;
+}
+
+.tag-count {
+    @apply text-xs px-2 py-0.5 rounded-full;
+}
+
+.delete-button {
+    @apply p-1 text-gray-400 hover:text-red-500 transition-colors duration-200;
+}
+
+/* Memo Styles */
+/* ... other shared styles ... */
+
+/* YouTube-specific styles */
+.youtube-memo {
+    position: relative;
+    border-left: 4px solid #ff0000;
+}
+
+.youtube-memo::before {
+    content: "📺";
+    position: absolute;
+    top: 8px;
+    left: -2px;
+    font-size: 16px;
+    background: white;
+    padding: 2px;
+    border-radius: 50%;
+    border: 2px solid #ff0000;
+}
+
+.youtube-metadata {
+    background: #f9f9f9;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 8px 0;
+    font-size: 0.9em;
+}
+
+.youtube-metadata .channel {
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.youtube-metadata .duration {
+    color: #666;
+}
+
+.youtube-metadata .views {
+    color: #666;
+}
+
+.youtube-transcript {
+    background: #f5f5f5;
+    border-left: 3px solid #ff0000;
+    padding: 8px;
+    margin: 8px 0;
+    font-style: italic;
+}
+
+.platform-indicator {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 8px;
+}
+
+.platform-youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.platform-generic {
+    background: #6b7280;
+    color: white;
+}
+
+/* Video thumbnail styling */
+.youtube-thumbnail {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+} 

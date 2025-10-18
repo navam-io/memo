@@ -1,0 +1,19 @@
+{
+  "name": "memo",
+  "version": "1.0.0",
+  "description": "Chrome extension for saving and analyzing webpage content",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.18.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "scripts": {
+    "build": "esbuild background.js --bundle --outfile=dist/background.bundle.js --platform=browser --format=esm",
+    "test": "node tests/comprehensive-test.js",
+    "test:simple": "node tests/simple-test-runner.js",
+    "test:browser": "echo 'Open tests/test.html in browser to run tests'",
+    "test:syntax": "find . -name '*.js' -not -path './node_modules/*' -not -path './dist/*' -not -path './tests/*' -exec node -c {} \\;"
+  },
+  "type": "module"
+} 
